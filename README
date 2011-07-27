@@ -1,0 +1,33 @@
+Scripts to backup usdf.org
+
+The United States Dressage Federation (USDF) records data about it's members,horses, competition results and awards earned, at usdf.org
+
+It is not safe that this data is not backed up.
+
+These scripts are an effort to help remedy this dangerous situation.
+
+
+
+implemented scripts:
+
+backup_competitions.sh
+  a bash script that saves dressage show results from 2011 to 1990 
+  creates 1 directory for each year, and saves show results for shows 0..9999 into the new director
+
+planned scripts:
+
+backup_competition_contacts.sh 
+  save competition contact pages 
+
+backup_medals.sh
+  backup rider medal status
+
+backup_amateur_status.sh
+  backup rider amateur status
+
+more that I cant think of right now..
+
+
+
+
+
