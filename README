@@ -16,7 +16,7 @@ backup_competitions.sh
 
 backup_competition_contacts.sh 
   a bash script to save competition contact pages
-  scans competiton pages from running backup_competitions.sh extracts the competition contact page urls and saves them
+  scans competiton pages that where saved from running backup_competitions.sh. Extracts the competition contact page urls and fetches them
   into the coresponding "year" directory with the competition results.
 
 
