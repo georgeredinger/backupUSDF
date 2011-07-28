@@ -14,10 +14,13 @@ backup_competitions.sh
   a bash script that saves dressage show results from 2011 to 1990 
   creates 1 directory for each year, and saves show results for shows 0..9999 into the new director
 
-planned scripts:
-
 backup_competition_contacts.sh 
-  save competition contact pages 
+  a bash script to save competition contact pages
+  scans competiton pages from running backup_competitions.sh extracts the competition contact page urls and saves them
+  into the coresponding "year" directory with the competition results.
+
+
+planned scripts:
 
 backup_medals.sh
   backup rider medal status
