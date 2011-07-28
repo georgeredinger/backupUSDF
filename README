@@ -19,6 +19,11 @@ backup_competition_contacts.sh
   scans competiton pages that where saved from running backup_competitions.sh. Extracts the competition contact page urls and fetches them
   into the coresponding "year" directory with the competition results.
 
+backup_horse_checks.sh
+  a bash script to save "horse score check pages" contact pages
+  currently, this script appears to only get the current info for the horse 
+  not the info from the date for the ride where the link was extracted from
+  
 
 planned scripts:
 
