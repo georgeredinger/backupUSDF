@@ -10,7 +10,7 @@ do
     grep -oh  "http://www.usdf.org/scorecheck/ScoreCheckResults.asp?NumberPass=[0-9]*" "$competition" |
 		while read url;do
       horse_number=$(echo $url | tr -cd '[[:digit:]]')
-      echo  "echo  $horse_number; wget --quiet -O \"$year/horse-check-$year-$competition_number-$horse_number.html\"  \"$url\"" >> horse_checks.tmp
+      echo  "echo  $horse_number; wget -T 7  --tries=10 --retry-connrefused -O \"$year/horse-check-$year-$competition_number-$horse_number.html\"  \"$url\"" >> horse_checks.tmp
 		done
     sort -u horse_checks.tmp > horse_checks.sh
     sh horse_checks.sh
